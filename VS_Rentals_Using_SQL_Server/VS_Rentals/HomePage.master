@@ -1,0 +1,84 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomePage.master.cs" Inherits="HomePage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>   
+</head>
+<body background="images/backnew.JPG">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="z-index: 100; left: 1px;
+            width: 100%; position: absolute; top: 6px; height: 102%">
+            <tr>
+                <td style="width: 977px; height: 82px">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="36pt"
+                        Height="50px" Style="z-index: 100; left: 461px; vertical-align: middle; position: absolute;
+                        top: 11px; text-align: center; width: 426px;" Text=" VS Rentals" Font-Names="Monotype Corsiva" ForeColor="White" EnableTheming="True"></asp:Label>
+                    
+                    <asp:HyperLink ID="HyperLink1" runat="server"  Font-Bold="True" Font-Size="Small"
+        ForeColor="White" Style="z-index: 104; left: 22px; position: absolute; top: 37px; width: 85px;" NavigateUrl="~/Default.aspx" Font-Italic="False" Font-Names="Verdana" Font-Underline="False" >Home</asp:HyperLink>
+                  
+                    <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Size="Small"
+        ForeColor="White" Style="z-index: 104; left: 111px; position: absolute; top: 37px; width: 216px;" NavigateUrl="~/feedback.aspx" Font-Italic="False" Font-Names="Verdana" Font-Underline="False">Feedback</asp:HyperLink>
+                    
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                    <div style="border-style: inherit; z-index: 100; left: 2px; width: 754px; position: absolute; top: 74px;
+                        height: 65px; margin-bottom: 0px;">
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" Style="z-index: 100;
+                            left: 38px; position: absolute; top: 17px; right: 649px;" Text="Search" Width="67px" ForeColor="White" Font-Names="arial"></asp:Label>
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/1620482756927.png" Style="z-index: 101;
+                            left: 115px; position: absolute; top: 9px; height: 30px; width: 30px;" />
+                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Style="z-index: 102; left: 168px;
+                            position: absolute; top: 17px" Text="Category" ForeColor="White" Font-Names="arial"></asp:Label>
+                        <asp:DropDownList ID="ddlcategory" runat="server" Style="z-index: 103; left: 258px;
+                            position: absolute; top: 16px" TabIndex="1" ValidationGroup="searchgroup" ForeColor="Black" OnSelectedIndexChanged="ddlcategory_SelectedIndexChanged1" Width="135px" Height="20px">
+                            <asp:ListItem>--Category--</asp:ListItem>
+                    <asp:ListItem Text="Air Conditioners" Value="Air Conditioners"></asp:ListItem>
+                    <asp:ListItem Text="Audio Visuals" Value="Audio Visuals"></asp:ListItem>
+                    <asp:ListItem Text="Automobiles" Value="Automobiles"></asp:ListItem>
+                    <asp:ListItem Text="Computers" Value="Computers"></asp:ListItem>
+                    <asp:ListItem Text="Furniture" Value="Furniture"></asp:ListItem>
+                    <asp:ListItem Text="Home Appliances" Value="Home Appliances"></asp:ListItem>
+                    <asp:ListItem Text="Office Equipments" Value="Office Equipments"></asp:ListItem>
+                    <asp:ListItem Text="Party Rentals" Value="Party Rentals"></asp:ListItem>
+                    <asp:ListItem Text="Relocations" Value="Relocations"></asp:ListItem>
+                </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" InitialValue="--Category--" ControlToValidate="ddlcategory" runat="server" style="z-index:auto;position:absolute; top: 20px; left: 398px;" ErrorMessage="*" Display="Dynamic" ValidationGroup="searchgroup"></asp:RequiredFieldValidator>
+                        <asp:Label ID="Label4" runat="server" Font-Bold="True" Style="z-index: 104; left: 695px;
+                            position: absolute; top: 17px; right: 31px;" Text="City" ForeColor="White" Font-Names="arial"></asp:Label>
+                <asp:DropDownList ID="DropDownList2" runat="server" Style="z-index: 100; left: 745px;
+                    position: absolute; top: 16px" Width="186px" Height="20px" TabIndex="11">
+                    <asp:ListItem>--City--</asp:ListItem>
+                    
+                </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" InitialValue="--City--" ControlToValidate="DropDownList2" runat="server" style="z-index:auto;position:absolute; top: 19px; left: 935px;" ErrorMessage="*" Display="Dynamic" ValidationGroup="searchgroup"></asp:RequiredFieldValidator>
+                        <asp:ImageButton ID="btnSearch" runat="server" ImageUrl="~/images/search.png"
+                            Style="z-index: 107; left: 963px; position: absolute; top: 12px; width: 100px; height: 26px;" OnClick="btnSearch_Click"
+                            TabIndex="3" ValidationGroup="searchgroup" />
+                <asp:Label ID="Label11" runat="server" Style="z-index: 100; left: 429px; position: absolute;
+                    top: 17px; right: 286px;" Text="State" Font-Bold="True" Font-Italic="False" ForeColor="White" Font-Names="arial"></asp:Label>
+                <asp:DropDownList ID="DropDownList1" runat="server" Style="z-index: 100; left: 490px;
+                    position: absolute; top: 16px" Width="166px" TabIndex="11" DataSourceID="SqlDataSource1" DataTextField="state" DataValueField="stateid" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True" ValidationGroup="searchgroup" Height="20px">
+                    
+                </asp:DropDownList>
+                    </div>
+                    <div style="text-align: left">
+                        <div style="text-align: left">
+                            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" InitialValue="0" ControlToValidate="DropDownList1" runat="server" style="z-index:auto;position:absolute; top: 93px; left: 663px;" ErrorMessage="*" Display="Dynamic" ValidationGroup="searchgroup"></asp:RequiredFieldValidator>
+                        </div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                    </td>
+            </tr>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:rentConnectionString %>" SelectCommand="SELECT * FROM [state] ORDER BY [stateid]"></asp:SqlDataSource>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
