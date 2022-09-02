@@ -3,7 +3,7 @@
 _**VS Rentals Project Using ASP.Net**_
 
 # _Software Requirements_
-* Database Server : Microsoft SQL Server Management Studio 2008 And Above
+* Databases : Microsoft SQL Server Management Studio Or PostgreSQL
 * IDE : Microsoft Visual Studio 2012 And Above
 * Frontend : ASP.Net With Ajax
 * Backend : C#.Net
