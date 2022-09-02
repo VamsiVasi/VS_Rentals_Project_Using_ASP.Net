@@ -1,0 +1,48 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="vendor.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+        <title>Untitled Page</title>    
+</head>
+<body background="images/caribbean-sea-sky-clouds (1).JPG" >
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="z-index: 100; left: 1px;
+            width: 100%; position: absolute; top: 6px; height: 102%">
+            <tr>
+                <td style="width: 977px; height: 82px">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="36pt"
+                        Height="50px" Style="z-index: 100; left: 461px; vertical-align: middle; position: absolute;
+                        top: 11px; text-align: center; width: 426px;" Text=" VS Rentals" Font-Names="Monotype Corsiva" ForeColor="White" EnableTheming="True"></asp:Label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 977px; height: 229px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                    
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    </form>
+</body>
+</html>
